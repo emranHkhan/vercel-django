@@ -1,0 +1,18 @@
+{
+    "builds": [
+        {
+            "src": "onedeliveryback/wsgi.py",
+            "user": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "15mb",
+                "runtime": "python3.9"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "onedeliveryback/wsgi.py"
+        }
+    ]
+}

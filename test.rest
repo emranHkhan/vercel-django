@@ -1,0 +1,20 @@
+POST http://127.0.0.1:8000/api/register/
+Content-Type: application/json
+
+{ "username": "imran", "first_name": "imran", "last_name": "khan", "password": "phitron1234", "email": "imran@gmail.com" }
+
+###
+
+POST http://127.0.0.1:8000/api/login/
+Content-Type: application/json
+
+{ "email": "imran@gmail.com", "password": "phitron1234" }
+
+###
+
+POST http://127.0.0.1:8000/api/logout/
+Content-Type: application/json
+Authorization: token 6487a62449ec6a36f8473d079f0f9a9d1bcf5c2f
+
+###
+
